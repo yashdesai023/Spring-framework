@@ -1,62 +1,55 @@
 # Spring Framework Learning Repository
 
-Welcome to my **Spring Framework** learning repository! 🚀 This repository contains all the code and exercises I complete as I learn different phases of the **Spring Framework**.
+Welcome to my **Spring Framework Learning Repository**! 🚀
 
-## 📂 Repository Structure
+I have started learning the **Spring Framework** and continuously update this repository with my progress. This repository serves as a structured learning journal where I implement various concepts of Spring. My goal is to strengthen my expertise in **Java Development** and become **job-ready** for a **Java Software Engineer role**.
 
-All the main programs are located in the following path:
+## 📁 Repository Structure
+The key programs and implementations are organized within the following path:
 
 ```
-spring-core/src/main/java
+spring-core/src/main/java/
 ```
 
-The repository is structured phase-wise, so as I progress in learning **Spring**, I will keep updating this repository with new concepts and implementations.
+Here, you will find the source code for my Spring Framework learning modules. I follow best practices to write clean, maintainable, and well-documented code.
 
 ## 📌 How to Access the Programs
+To explore my Spring Framework implementations:
 
-To explore the code in this repository, follow these steps:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/YOUR_GITHUB_USERNAME/Spring-Framework.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd Spring-Framework
+   ```
+3. Open the project in your favorite IDE (**IntelliJ IDEA**, **Eclipse**, or **VS Code**).
+4. Locate the main programs inside:
+   ```sh
+   spring-core/src/main/java/
+   ```
+5. Run the programs and explore different Spring concepts.
 
-### 1️⃣ Clone the Repository
-If you want to access the code on your local machine, you can clone this repository using:
+## 💡 Why This Repository?
+This repository showcases my **hands-on experience with the Spring Framework**, which is essential for backend development in Java. By maintaining this structured learning repository, I aim to demonstrate my proficiency in:
+- **Spring Core**
+- **Dependency Injection**
+- **Spring Boot**
+- **Spring MVC**
+- **Spring Data JPA**
+- **RESTful Web Services**
 
-```sh
-git clone https://github.com/YOUR_GITHUB_USERNAME/Spring-Framework.git
-```
+This will help recruiters and hiring managers assess my **Java development skills** and **problem-solving abilities** in real-world applications.
 
-### 2️⃣ Navigate to the Code Directory
-Once cloned, navigate to the main Java source files:
+## 📞 Connect with Me
+If you find my work interesting and would like to discuss potential opportunities, feel free to reach out!
 
-```sh
-cd Spring-Framework/spring-core/src/main/java
-```
+🔗 LinkedIn: [Yash S. Desai](https://www.linkedin.com/in/yash-s-desai-/)
+✉️ Email: [desaisyash1000@gmail.com](mailto:desaisyash1000@gmail.com)
 
-### 3️⃣ Open in Your IDE
-You can open the project in your preferred **Java IDE** (such as **IntelliJ IDEA** or **Eclipse**) and start exploring the code.
-
-### 4️⃣ Run the Programs
-Make sure you have **Java** and **Spring dependencies** installed. You can run the Spring applications using:
-
-```sh
-mvn spring-boot:run
-```
-OR
-```sh
-java -jar target/your-spring-app.jar
-```
-
-## 🛠 Prerequisites
-Before running the programs, ensure you have:
-- **Java JDK 17+** installed
-- **Maven** for dependency management
-- **Spring Boot** (if applicable)
-
-## 📌 Stay Updated
-Since I will be updating this repository as I progress in my Spring learning journey, feel free to **star ⭐** the repository and check for updates!
-
-Happy Coding! 😊
+I am actively looking for a **Java Software Engineer role** and would love to contribute to a dynamic development team. Let’s connect!
 
 ---
-
-### 🔗 Connect with Me
-If you have any suggestions or queries, feel free to reach out to me on **GitHub** or **LinkedIn**.
+**Thank you for visiting my repository!** If you find this useful, feel free to **star ⭐ this repo** and stay updated on my learning journey. Happy coding! 😊
 
