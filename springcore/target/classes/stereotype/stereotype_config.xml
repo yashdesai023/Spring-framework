@@ -12,6 +12,11 @@
         https://www.springframework.org/schema/util/spring-util.xsd">
     
     <context:component-scan base-package="stereotype"/>
-    
+
+    <util:list id="temp" list-class="java.util.LinkedList" >
+        <value>Pune</value>
+        <value>Malegaon</value>
+        <value>Zodage</value>
+    </util:list>
    
  </beans>
