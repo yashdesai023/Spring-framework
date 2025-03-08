@@ -11,9 +11,13 @@
     <!-- Enable annotation-based configuration -->
     <context:annotation-config/>
 
-    <bean id="address" class="autowire.annotation.Address">
+    <bean id="temp1" class="autowire.annotation.Address">
         <property name="street" value="Temp Street"></property>
         <property name="city" value="Delhi"></property>
+    </bean>
+    <bean id="temp2" class="autowire.annotation.Address">
+        <property name="street" value="Temp2 Street"></property>
+        <property name="city" value="Pune"></property>
     </bean>
 
     <bean id="Emp01" class="autowire.annotation.Emp"></bean>
