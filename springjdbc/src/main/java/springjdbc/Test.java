@@ -12,12 +12,34 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("springjdbc/config.xml");
 
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
-        Student student = new Student();
-        student.setId(586);
-        student.setName("Jay");
-        student.setCity("Malegaon");
+        //Student student = new Student();
+    
+    
+    // INSERT
+        // student.setId(586);
+        // student.setName("Jay");
+        // student.setCity("Malegaon");
+        // int r = studentDao.insert(student);
+        // System.out.println("Student inserted: " + r);
 
-        int r = studentDao.insert(student);
-        System.out.println("Student inserted: " + r);
-    }
+        
+        
+    // UPDATE
+        // student.setId(502);
+        // student.setName("Sachin");
+        // student.setCity("Mumbai");
+        // studentDao.change(student);
+        // System.out.println("Data updated");
+    
+    
+    
+    // DELETE
+        // student.setId(502);
+        // studentDao.delete(student);
+        // System.out.println("Data deleted");
+
+        Student student = studentDao.getStudent(401);
+        System.out.println(student);
+        System.out.println("Student fetched");
+}
 }
