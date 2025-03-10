@@ -1,5 +1,7 @@
 package springjdbc;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import dao.StudentDao;
@@ -12,7 +14,7 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("springjdbc/config.xml");
 
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
-        //Student student = new Student();
+        Student student = new Student();
     
     
     // INSERT
@@ -34,12 +36,21 @@ public class Test {
     
     
     // DELETE
-        // student.setId(502);
-        // studentDao.delete(student);
-        // System.out.println("Data deleted");
+        student.setId(586);
+        studentDao.delete(student);
+        System.out.println("Data deleted");
+    
+    // SELECT Student
+        // Student student = studentDao.getStudent(401);
+        // System.out.println(student);
+        // System.out.println("Student fetched");
 
-        Student student = studentDao.getStudent(401);
-        System.out.println(student);
-        System.out.println("Student fetched");
+    // SELECT All Students
+
+        List<Student> students = studentDao.getAllStudents();
+        for(Student s: students) {
+            System.out.println(s);
+        }
+    
 }
 }
