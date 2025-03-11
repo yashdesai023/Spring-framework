@@ -1,148 +1,104 @@
-# Student Management System (CRUD Application)
+# Student Management System (Spring ORM)
 
-Welcome to the **Student Management System**, a CRUD (Create, Read, Update, Delete) project built using **Java, Spring Boot, Hibernate, and MySQL**. This project demonstrates my ability to develop a complete backend system with database integration, showcasing my software engineering skills to recruiters and potential employers.
-
-## 🚀 Project Overview
-
-This project is designed to manage student records efficiently. It provides functionalities to:
-- **Create** a new student record.
-- **Read** and list all students.
-- **Update** student details.
-- **Delete** a student record.
-
-The project follows the **MVC architecture**, ensuring maintainability and scalability. It integrates **Spring Boot for backend logic, Hibernate for ORM, and MySQL for persistent storage**.
+Welcome to the **Student Management System**, a CRUD-based application built using **Spring ORM, Hibernate, and MySQL**. This project showcases my expertise in **Spring Framework, Hibernate, ORM, and database management**, making it a valuable addition to my portfolio for recruiters.
 
 ---
+## 📌 Project Overview
+This is a **CRUD (Create, Read, Update, Delete) application** that allows users to manage student records. The project follows a layered architecture, ensuring maintainability and scalability.
 
-## 📌 Features
-✅ User-friendly CRUD operations.<br>
-✅ Hibernate ORM for database interaction.<br>
-✅ Spring Boot for seamless application development.<br>
-✅ RESTful API endpoints for easy integration.<br>
-✅ MySQL database for data storage.<br>
-✅ Exception handling and validation.<br>
+### 🛠 Tech Stack
+- **Spring Framework** (Spring ORM, Spring JDBC, Hibernate)
+- **Hibernate** (ORM for database interactions)
+- **MySQL** (Relational Database Management System)
+- **Java** (Core programming language)
 
----
-
-## 🛠️ Technologies Used
-- **Java 17**
-- **Spring Boot 3.x**
-- **Hibernate (JPA)**
-- **MySQL Database**
-- **Maven**
-- **Lombok** (to reduce boilerplate code)
+### ✨ Features
+- **Add new students** with unique IDs, names, and city details.
+- **Retrieve all students** from the database.
+- **Get details of a single student** based on their ID.
+- **Update student details** including name and city.
+- **Delete a student** from the database.
+- **User-friendly console interface** for interaction.
 
 ---
-
-## 🎯 Skills Demonstrated
-Through this project, I have applied my skills in:
-- **Backend Development**: Writing clean and maintainable REST APIs.
-- **Database Management**: Using Hibernate ORM with MySQL.
-- **Spring Framework**: Implementing dependency injection and service layers.
-- **Problem-Solving**: Debugging errors and ensuring smooth application execution.
-- **Project Structuring**: Organizing code in an industry-standard way.
-
----
-
-## 🔧 Setup and Installation
-
-### Prerequisites
-Ensure you have the following installed:
-- **Java 17+**
-- **Maven**
-- **MySQL Server**
-- **Spring Boot CLI (Optional)**
-
-### Steps to Run Locally
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/student-management-system.git
-   cd student-management-system
-   ```
-2. **Configure Database**:
-   - Open MySQL and create a database:
-     ```sql
-     CREATE DATABASE student_db;
-     ```
-   - Update `application.properties` with your MySQL credentials:
-     ```properties
-     spring.datasource.url=jdbc:mysql://localhost:3306/student_db
-     spring.datasource.username=root
-     spring.datasource.password=yourpassword
-     spring.jpa.hibernate.ddl-auto=update
-     spring.jpa.show-sql=true
-     ```
-3. **Build and Run the application**:
-   ```bash
-   mvn spring-boot:run
-   ```
-4. **Access the application**:
-   - The API will be available at: `http://localhost:8080`
-   - You can test API endpoints using **Postman** or **Swagger UI**.
-
----
-
-## 📌 API Endpoints
-
-| HTTP Method | Endpoint         | Description |
-|------------|----------------|-------------|
-| GET        | /students       | Get all students |
-| GET        | /students/{id}  | Get student by ID |
-| POST       | /students       | Add a new student |
-| PUT        | /students/{id}  | Update student details |
-| DELETE     | /students/{id}  | Delete a student |
-
----
-
 ## 📂 Project Structure
+The project is organized as follows:
+
 ```
-student-management-system/
-│── src/main/java/com/example/
-│   ├── controller/ (Handles API requests)
-│   ├── service/ (Contains business logic)
-│   ├── repository/ (Database interactions)
-│   ├── entity/ (Hibernate entity classes)
-│   ├── StudentManagementApplication.java (Main class)
-│── src/main/resources/
-│   ├── application.properties (Database configurations)
-│── pom.xml (Dependencies)
+Spring-framework/springorm/src/main/java/
+│── dao/
+│   ├── StudentDao.java        # Data Access Object for Student Entity
+│
+│── entities/
+│   ├── Student.java           # Student Entity with JPA Annotations
+│
+│── factory/
+│   ├── HibernateTemplateFactoryBean.java  # Hibernate Template Factory Bean
+│
+│── springorm/
+│   ├── Test.java              # Main class to run the application
+│   ├── config.xml             # Spring Configuration File
 ```
 
 ---
+## 🚀 Getting Started
 
-## 🏆 Why This Project Stands Out?
-This project is **structured professionally** and follows industry best practices, making it a valuable addition to my GitHub portfolio. It reflects my ability to:
-✅ Work with Spring Boot and Hibernate.
-✅ Design RESTful APIs.
-✅ Manage databases efficiently.
-✅ Handle real-world CRUD operations.
+### 📌 Prerequisites
+Ensure you have the following installed on your system:
+- **Java (JDK 17 or higher)**
+- **Maven** (For dependency management)
+- **MySQL** (Database setup)
+
+### 🛠 Installation Steps
+
+1. **Clone the Repository**:
+```bash
+git clone https://github.com/yourusername/student-management-system.git
+cd student-management-system
+```
+
+2. **Database Setup**:
+   - Create a MySQL database named `springjdbc`.
+   - Update the database credentials in `config.xml`:
+```xml
+<property name="url" value="jdbc:mysql://localhost:3306/springjdbc" />
+<property name="username" value="root" />
+<property name="password" value="your_password" />
+```
+
+3. **Build the Project**:
+```bash
+mvn clean install
+```
+
+4. **Run the Application**:
+```bash
+mvn exec:java -Dexec.mainClass="springorm.Test"
+```
 
 ---
+## 🔹 Usage
 
-## 🤝 Contribution
-Contributions are welcome! Follow these steps:
-1. **Fork the repository**
-2. **Create a new branch**: `git checkout -b feature-branch`
-3. **Commit changes**: `git commit -m 'Added new feature'`
-4. **Push to GitHub**: `git push origin feature-branch`
-5. **Create a Pull Request**
+Once the application is running, use the console menu to interact with student records:
 
----
-
-## 📝 License
-This project is licensed under the MIT License.
+1️⃣ **Add a Student** - Enter student details when prompted.
+2️⃣ **View All Students** - Displays a list of students in the database.
+3️⃣ **Get Student Details** - Fetch a specific student's information by entering their ID.
+4️⃣ **Update Student** - Modify an existing student's details.
+5️⃣ **Delete Student** - Remove a student record permanently.
+6️⃣ **Exit** - Close the application.
 
 ---
-
-### 📢 Let's Connect!
-If you're a recruiter viewing this, feel free to reach out! I'm passionate about **backend development, Spring Boot, and cloud technologies** and open to exciting opportunities.
-
-📧 Email: your.email@example.com<br>
-🔗 LinkedIn: [your-linkedin-profile](https://linkedin.com/in/yourprofile)<br>
-💻 GitHub: [your-github-profile](https://github.com/yourusername)
+## 🏆 Skills Demonstrated
+- **Java Development**: Implemented an object-oriented CRUD system.
+- **Spring ORM & Hibernate**: Integrated Hibernate for ORM and transaction management.
+- **MySQL Database Management**: Used SQL queries and relational data storage.
 
 ---
+## 💡 Acknowledgements
+- [Spring Documentation](https://spring.io/projects/spring-framework)
+- [Hibernate Documentation](https://hibernate.org/)
 
-⭐ **If you found this project helpful, please give it a star!** ⭐
+---
 
 
